@@ -3,15 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="msg-container hide">
+      <p id="msg">Winner</p>
+      <button id="new-btn">New Game</button>
+    </div>
     <h1>Tic Tac Toe</h1>
+    <div id="player-turn">Player O's turn</div>
     <div class="container">
       <div class="game">
-        <button class="box">X</button>
-        <button class="box">O</button>
+        <button class="box"></button>
+        <button class="box"></button>
         <button class="box"></button>
         <button class="box"></button>
         <button class="box"></button>
@@ -22,5 +27,10 @@
       </div>
     </div>
     <button id="reset-btn">Reset</button>
+    <div id="scoreboard">
+      <p id="player-o-wins">Player O Wins: 0</p>
+      <p id="player-x-wins">Player X Wins: 0</p>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
